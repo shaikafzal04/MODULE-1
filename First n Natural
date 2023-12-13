@@ -16,3 +16,10 @@ public class FirstnNatural
 		}
 
 	}
+
+OUTPUT 
+Enter the total numbers:
+2
+First n natural numbers are -------------------
+1
+2
