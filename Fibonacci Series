@@ -1,0 +1,64 @@
+//Program to print Fibonacci series upto a given number.
+import java.util.Scanner;
+
+public class FibonacciSeries
+{
+    public  static void main(String args[])
+	 {
+	   
+	        Scanner reader = new Scanner(System.in);
+		System.out.print("\nEnter the number of terms of the Series:  ");
+		int num = reader.nextInt();
+		int term1 = 0;
+		int term2 = 1;
+		int temp = 0;
+		System.out.print("\nThe Fibonacci Series is -----------------\n");
+		for(int i = 1; i<= num; i++)
+		{
+			System.out.println("\t" + term1);
+			temp = term1 + term2;
+			term1 = term2;
+			term2 = temp;
+		}
+		
+	 }
+}
+output :
+
+Enter the number of terms of the Series:  34
+
+The Fibonacci Series is -----------------
+        0
+        1
+        1
+        2
+        3
+        5
+        8
+        13
+        21
+        34
+        55
+        89
+        144
+        233
+        377
+        610
+        987
+        1597
+        2584
+        4181
+        6765
+        10946
+        17711
+        28657
+        46368
+        75025
+        121393
+        196418
+        317811
+        514229
+        832040
+        1346269
+        2178309
+        3524578
